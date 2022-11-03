@@ -1,0 +1,49 @@
+/*GENERAL STYLES*/
+    /*styles for the whole body section*/
+    body{
+        text-align: center;
+    }
+    /*styles for all images*/
+img{
+    width: 12%;
+    height: 12%;
+}
+
+/*ID STYLES*/
+#introCard{
+    background-color: rgb(7, 3, 230);
+}
+
+/*CLASS STYLES*/
+
+    /*box that changes size {mimics water}*/
+.water{
+    width:15px;
+    height:15px;
+    background-color: rgb(128, 10, 238);
+    animation-name: animeKey;
+    animation-duration: 2s;
+}
+
+    /*To reposition and rotate the image*/
+.pitcher{
+    transform: scaleX(-1);
+}
+
+    /*styles for the Cup Image
+.cup{
+
+}
+*/
+
+/*KEYFRAMES*/
+
+@keyframes waterSize{
+    from {width:60%;}
+    to {width: 12%;}
+}
+
+@keyframes pitcherRotate{
+    from { rotate: 0%;}
+    to{rotate: 45%;}
+}
