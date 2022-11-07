@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <!--START OF HEAD SECTION-->
+    <head>
+        <!--Makes any Script tags in this document sourced from the specified javescript file-->
+        <script src="script.js"></script>
+        <!--links the page to the specified .css file-->
+        <link href="styles.css" rel="stylesheet">
+        <!--gives the page a title-->
+        <title>Pour the water</title>
+    </head>
+
+
+    <!--START OF BODY SECTION-->
+    <body>
+        <!--makes a divided section-->
+        <div id="headerEnvelope">
+            <!--makes a divided section-->
+            <div id="introCard">
+                <!--largest header tag-->
+                <h1>Pour the Water!</h1>
+                <!--3rd largest header tag-->
+                <h3>Click and Hold the pitcher to pour water into the cup</h3>
+                <!--creates a button; opens a .js function when clicked-->
+                <button id="settingsBtn" onclick="settings()">Settings</button>
+            </div>
+
+            <!--makes a divided container with the volume controls-->
+            <div id="BGSound" style="display:none">
+                <!--puts in a looping audio source with its own controls-->
+                <audio controls loop>
+                    <!--the source of the audio-->
+                    <source src="Restaurant Ambiance.mp3" type="audio/mpeg">
+                </audio>
+                <!--paragraph text that instructs  how to use the sound controls-->
+                <p>toggle for background noise</p>
+            </div>
+        </div>
+
+        <!--stlye tag that's used to put styles specified inside of the .js file-->
+        <style id="moveImg"></style>
+
+        <!--put a line through the webpage-->
+        <hr>
+
+        <!--anchor tag that equips a function event to the specified image when the mouse is held down on it-->
+        <a onmousedown="pourAudio();">
+            <!--creates an image on the page-->
+            <img class="pitcher" src="https://freesvg.org/img/pitcher-carafa.png">
+        </a>
+
+        <!--creates an empty line on the page-->
+        <br>
+
+         <!--creates an image on the page-->
+        <img  class= "cup" src="https://freesvg.org/img/stikline.png">
+
+    </body>
+
+</html>

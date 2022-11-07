@@ -1,0 +1,99 @@
+/*-----------GENERAL STYLES--------------------*/
+    /*styles for the whole body section*/
+body{
+        /*Realigns content*/ 
+    text-align: center; 
+        /*sets an image as the background*/
+    background-image: URL("https://media.istockphoto.com/photos/empty-tabletop-in-the-coffe-shop-picture-id1191879835?k=20&m=1191879835&s=612x612&w=0&h=WM--FehE2sULPmRB5Kz0s0uL8Oxh5sk3mZZqyIwVJZc=");
+        /*changes the background's size*/
+    background-size: 100%;
+        /*makes sure the background doesn't repeat itself*/
+    background-repeat: no-repeat;
+        /*changes the image's position for the background*/
+    background-position: 25% 0%;
+        /*adjusts the top margin of the container*/
+    margin-top : 5%;
+        /*changes the color of the container's text*/
+    color:ghostwhite;
+}
+
+    /*styles for all images*/
+img{
+    /*sets a specified width for images*/
+    width: 12%;
+    /*sets a specified height for images*/
+    height: 12%;
+}
+
+    /*styles for buttons*/
+button{
+    /*adjusts the margin of the button*/
+    margin: .5%;
+}
+
+/*-----------ID STYLES--------------------*/
+    
+    /*container holding the intro and sound settings divs*/
+#headerEnvelope{
+    /*Changes the container's background color*/
+    background-color: rgba(0, 0, 0, 0.199);
+}
+
+    /*Instruction container*/
+#introCard{
+    /*Creates a border around the container*/
+    border-style: solid;
+    /*changes the container's border color*/
+    border-color: ghostwhite;
+}
+
+    /*Background Sound container*/
+#BGSound{
+    /*makes upper padding for the container*/
+    padding-top:20px;
+    /*Creates a border around the container*/
+    border-style: solid;
+    /*changes the container's border color*/
+    border-color: ghostwhite;
+}
+
+/*-----------CLASS STYLES--------------------*/
+
+    /*the image of a pitcher*/
+.pitcher{
+    /*adds upper padding to the image*/
+    padding-top: 10%;
+    /*mirrors the image*/
+    transform: scaleX(-1);
+}
+
+    /*when mouse hovers over the pitcher image*/
+.pitcher:hover{
+    cursor: pointer;
+}
+    /*when the mouse being held on the image*/
+.pitcher:active{
+    /*plays an animation*/
+    animation: PitcherRotate 2s ease-in-out
+}
+
+    /*styles for the Cup Image*/
+.cup{
+    /*changes the image's opacity*/
+    opacity: 60%;
+    /*adds left-most margin to the image*/
+    margin-left:15%;
+    /*adds upper margin to the image*/
+    margin-top: 10%;
+}
+
+/*-----------KEYFRAMES--------------------*/
+
+/*Rotate the Pitcher Image*/
+@keyframes PitcherRotate{
+    /*Starting with the image flipped across its X-Axis*/
+    0% {transform: scaleX(-1);}
+
+    /*Ends with the Flipped Image then rotating -45 Degrees*/
+    100% {transform: scaleX(-1) rotate(-45deg);}
+}
